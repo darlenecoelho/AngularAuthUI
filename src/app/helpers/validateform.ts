@@ -7,8 +7,8 @@ export default class ValidateForm {
       if (control instanceof FormControl) {
         control.markAsDirty({ onlySelf: true });
       } else if (control instanceof FormGroup) {
-        this.validateAllFormFields(control)
+        this.validateAllFormFields(control);
       }
-    })
+    });
   }
 }
